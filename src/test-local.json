@@ -1,0 +1,157 @@
+{
+  "personInfo": {
+    "firstName": "patryk",
+    "lastName": "maternicki",
+    "mobilePhone": "516 130 929",
+    "email": "patryk.maternicki@gmail.com",
+    "street": "Jana Kilinskiego",
+    "numberOfHouse": "22",
+    "numberOfFlat": "3",
+    "postCode": "83-010",
+    "city": "Gdansk"
+  },
+  "skills": [
+    {
+      "label": "JS Frameworks",
+      "tags": ["Vue", "React"]
+    },
+    {
+      "label": "PHP Frameworks",
+      "tags": ["Lavarel", "Silex"]
+    },
+    {
+      "label": "Testing",
+      "tags": ["Jest", "Karma", "Cypress"]
+    },
+    {
+      "label": "Other",
+      "tags": ["Webpack", "Babel", "Google Tools", "SCSS"]
+    }
+  ],
+  "hobbies": ["Cycling", "Japan Culture", "Economy"],
+  "projects": [
+    {
+      "title": "Shopmaker",
+      "tags": ["SCSS", "Vue2", "Vuex", "Vue-router", "Vuetify"],
+      "task": "Ecomerce",
+      "link": "https://patrykmaternicki.github.io/ShopMaker/#/"
+    },
+    {
+      "title": "Bad words",
+      "tags": ["React", "Redux", "React-router"],
+      "task": "Game of bad/good words",
+      "link": "https://github.com/PatrykMaternicki/bad-word"
+    },
+    {
+      "title": "Insurance Calculator",
+      "tags": ["React", "Redux"],
+      "task": "Calculator of insurance",
+      "link": "https://github.com/PatrykMaternicki/InsuranceCalc"
+    },
+    {
+      "title": "ESCC",
+      "tags": ["Vue3", "Pinia"],
+      "task": "Ecomerce",
+      "link": "https://github.com/PatrykMaternicki/ESCC"
+    },
+    {
+      "title": "Parleto",
+      "tags": ["Vue2", "Vuex", "Vuetify"],
+      "task": "CRM",
+      "link": "https://github.com/PatrykMaternicki/Parleto"
+    }
+  ],
+  "jobs": [
+    {
+      "position": "Frontend Developer",
+      "companyName": "Idego group",
+      "period": {
+        "start": "Feb 2021",
+        "end": "continue"
+      },
+      "commercialProjects": [
+        {
+          "name": "KuguHome",
+          "technology": ["Vue 2.8", "Vuex", "Cypress", "Pinia", "Bootstrap"],
+          "duties": [
+            "Sharing knowlegde (Automatic Testing , Vue expierence)",
+            "Implement Automatic Testing",
+            "Create a new architecture/design (atomic-design-components)",
+            "Create a new components by atomic-design-components using new style guide",
+            "Refactoring/Clean up",
+            "Implement business feature",
+            "Implement and keep quality of code (lint, sonar, prettier)"
+          ]
+        }
+      ]
+    },
+    {
+      "position": "Frontend Developer",
+      "companyName": "Posbit",
+      "period": {
+        "start": "Nov 2020",
+        "end": "Feb 2021"
+      },
+      "commercialProjects": [
+        {
+          "name": "Poscloud & Posblock",
+          "technology": [
+            "Vue 2.7",
+            "Vuex",
+            "Cypress",
+            "Vuetify",
+            "Jest",
+            "Vue-unit",
+            "SCSS"
+          ],
+          "duties": [
+            "Sharing knowlegde (Automatic Testing , Vue expierence)",
+            "Create a frontend architecture for new CRM System. (Schema, Diagrams, Documentation, Planning)",
+            "Write unit testing",
+            "Implement business feature",
+            "Implement and keep quality of code (lint, sonar, prettier)"
+          ]
+        }
+      ]
+    },
+    {
+      "position": "Junior/ Mid Frontend Developer",
+      "companyName": "Polskapress",
+      "period": {
+        "start": "Dec 2017",
+        "end": "Nov 2020"
+      },
+      "commercialProjects": [
+        {
+          "name": "FSA & Demaskator & Panel Polskapress",
+          "technology": [
+            "Vue 2.5",
+            "Vuex",
+            "Cypress",
+            "Vuetify",
+            "Jest",
+            "Vue-unit",
+            "SCSS"
+          ],
+          "duties": [
+            "Prepare panel components",
+            "Implement business feature",
+            "Implement ads/anylitcs system",
+            "Resolve bugs"
+          ]
+        },
+        {
+          "name": "Polskapress page",
+          "technology": ["Vue 2.5", "Vuex", "Cypress", "Vue-bootstrap", "SCSS"],
+          "duties": [
+            "Fixing bugs",
+            "Create a page",
+            "Implement ads/anylitcs system",
+            "Resolve bugs",
+            "Create a CMS dashboard"
+          ]
+        }
+      ]
+    }
+  ]
+}
