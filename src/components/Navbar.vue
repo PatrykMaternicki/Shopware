@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container col-8">
+    <div class="container-fluid col-10">
       <a class="navbar-brand fw-bold" href="#">Shopware</a>
 
       <div class="d-flex col-4">
@@ -16,12 +16,12 @@
     </div>
   </nav>
 </template>
-<script setup lang="ts">import { useProductsStore } from '@/store/products';
-
+<script setup lang="ts">
+import { useProductsStore } from "@/store/products";
 
 const productsStore = useProductsStore();
 const handleSelect = (event: Event) => {
   const selectedOption = (event.target as HTMLSelectElement).value;
-  productsStore.sortBy(selectedOption)
+  productsStore.sortBy(selectedOption);
 };
 </script>
