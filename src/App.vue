@@ -1,7 +1,9 @@
 <script setup lang="ts">
-
+import Navbar from "@/components/Navbar.vue";
 </script>
 
 <template>
-  <div>Clean Project</div>
+  <div>
+    <Navbar />
+  </div>
 </template>
