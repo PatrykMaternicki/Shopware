@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid col-10 pr-0 pl-0">
+    <div class="container-fluid col-10 p-0">
       <a class="navbar-brand fw-bold" href="#">Shopware</a>
 
       <div class="d-flex col-4">

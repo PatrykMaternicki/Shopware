@@ -28,10 +28,18 @@ const productsStore = useProductsStore();
 productsStore.getProducts();
 const { products } = storeToRefs(productsStore);
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .grid {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 1fr;
   gap: 1rem;
+
+  @media (min-width: 768px) { 
+    grid-template-columns: 50% 50%;
+  }
+
+  @media (min-width: 992px) { 
+    grid-template-columns: 33% 33% 33%;
+  }
 }
 </style>
