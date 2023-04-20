@@ -19,7 +19,7 @@
 <script setup lang="ts">
 import { useProductsStore } from "@/store/products";
 import { SORT_PARAMETER } from "@/dictionaries/parameters";
-import type { typeOfSort } from '@/types/requestHeader';
+import type { typeOfSort } from "@/types/requestHeader";
 
 const productsStore = useProductsStore();
 const handleSelect = (event: Event) => {
@@ -30,12 +30,10 @@ const handleSelect = (event: Event) => {
 </script>
 <style lang="scss">
 .border-muted {
-  border-color: #6c757d !important
+  border-color: #6c757d !important;
 }
-
 
 select {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%236c757d' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
 }
-
 </style>

@@ -7,11 +7,8 @@
     <div class="container-fluid pa-0 bg-light">
       <div class="pt-5 pb-5 col-10 mx-auto">
         <div class="grid">
-          <div v-for="(product, index) in products">
-            <Card
-              :key="index"
-              :product="product"
-            />
+          <div :key="index" v-for="(product, index) in products">
+            <Card :product="product" />
           </div>
         </div>
       </div>
@@ -34,11 +31,11 @@ const { products } = storeToRefs(productsStore);
   grid-template-columns: 1fr;
   gap: 1rem;
 
-  @media (min-width: 768px) { 
+  @media (min-width: 768px) {
     grid-template-columns: 50% 50%;
   }
 
-  @media (min-width: 992px) { 
+  @media (min-width: 992px) {
     grid-template-columns: 33% 33% 33%;
   }
 }
