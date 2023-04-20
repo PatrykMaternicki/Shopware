@@ -11,7 +11,7 @@ export default class shopwareService {
 
   private createHeader(headers: RequestHeader) {
     return {
-      method: headers.method || "DUPA",
+      method: headers.method || "POST",
       headers: {
         "sw-access-key": this.token,
         Accept: "application/json",
