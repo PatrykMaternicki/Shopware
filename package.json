@@ -1,5 +1,5 @@
 {
-  "name": "cvcreator2-0",
+  "name": "Shopware",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -19,7 +19,6 @@
     "npm": "^9.6.4",
     "pinia": "^2.0.28",
     "sass": "^1.58.3",
-    "vite-plugin-vue-type-imports": "^0.2.4",
     "vue": "^3.2.45"
   },
   "devDependencies": {
