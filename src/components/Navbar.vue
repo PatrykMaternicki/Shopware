@@ -9,8 +9,8 @@
           class="form-select bg-dark text-white"
           aria-label="Wybierz sortowanie"
         >
-          <option value="asc">Najtańsze</option>
-          <option value="desc">Najdrozsze</option>
+          <option value="price-desc">Najtańsze</option>
+          <option value="price-asc">Najdrozsze</option>
         </select>
       </div>
     </div>

@@ -1,13 +1,13 @@
 <template>
   <div>
     <Navbar />
-    <div class="container col-8 mt-5 mb-5">
+    <div class="container col-5 mt-5 mb-5">
       <Searchbox />
     </div>
     <div class="container-fluid pa-0 bg-light">
         <div class="pt-4 pb-4 col-10 mx-auto">
           <div class="d-flex flex-gap flex-wrap">
-            <Card class="item" :product="product" v-for="(product, index) in products" />
+            <Card :key="index" class="item" :product="product" v-for="(product, index) in products" />
           </div>
         </div>
     </div>
