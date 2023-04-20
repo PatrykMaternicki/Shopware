@@ -6,7 +6,7 @@
       <div class="d-flex col-4">
         <select
           @change="handleSelect"
-          class="form-select bg-dark text-white"
+          class="form-select bg-dark border-muted text-muted"
           aria-label="Wybierz sortowanie"
         >
           <option :value="SORT_PARAMETER.PRICE_ASC">Najtańsze</option>
@@ -28,3 +28,14 @@ const handleSelect = (event: Event) => {
   productsStore.sortBy(selectedOption);
 };
 </script>
+<style lang="scss">
+.border-muted {
+  border-color: #6c757d !important
+}
+
+
+select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%236c757d' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+}
+
+</style>
