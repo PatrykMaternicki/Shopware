@@ -1,12 +1,13 @@
 import { defineStore } from "pinia";
 import ShopwareService from "@/services/shopware";
-const shopwareService = new ShopwareService();
+import type { typeOfSort } from "@/types/requestHeader";
+import { SORT_PARAMETER } from "@/dictionaries/parameters";
 
-type typeOfSort = "price-asc" | "price-desc";
+const shopwareService = new ShopwareService();
 
 export const useProductsStore = defineStore("productsStore", {
   state: () => ({
-    typeOfSort: "price-desc" as typeOfSort,
+    typeOfSort: SORT_PARAMETER.PRICE_ASC as typeOfSort,
     categoryOfProduct: "e435c9763b0d44fcab67ea1c0fdb3fa0",
     products: [],
     body: {
@@ -18,6 +19,7 @@ export const useProductsStore = defineStore("productsStore", {
   actions: {
     sortBy(sortType: typeOfSort) {
       this.typeOfSort = sortType;
+      this.getProducts();
     },
 
     async getProducts() {
