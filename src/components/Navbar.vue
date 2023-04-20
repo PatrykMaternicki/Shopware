@@ -9,8 +9,8 @@
           class="form-select bg-dark text-white"
           aria-label="Wybierz sortowanie"
         >
-          <option value="price-desc">Najtańsze</option>
-          <option value="price-asc">Najdrozsze</option>
+          <option :value="SORT_PARAMETER.PRICE_ASC">Najtańsze</option>
+          <option :value="SORT_PARAMETER.PRICE_DESC">Najdrozsze</option>
         </select>
       </div>
     </div>
@@ -18,10 +18,13 @@
 </template>
 <script setup lang="ts">
 import { useProductsStore } from "@/store/products";
+import { SORT_PARAMETER } from "@/dictionaries/parameters";
+import type { typeOfSort } from '@/types/requestHeader';
 
 const productsStore = useProductsStore();
 const handleSelect = (event: Event) => {
-  const selectedOption = (event.target as HTMLSelectElement).value;
+  const selectedOption = (event.target as HTMLSelectElement)
+    .value as typeOfSort;
   productsStore.sortBy(selectedOption);
 };
 </script>

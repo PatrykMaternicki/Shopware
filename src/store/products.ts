@@ -2,8 +2,7 @@ import { defineStore } from "pinia";
 import ShopwareService from "@/services/shopware";
 const shopwareService = new ShopwareService();
 
-
-type typeOfSort = 'price-asc' | 'price-desc'
+type typeOfSort = "price-asc" | "price-desc";
 
 export const useProductsStore = defineStore("productsStore", {
   state: () => ({
@@ -11,10 +10,9 @@ export const useProductsStore = defineStore("productsStore", {
     categoryOfProduct: "e435c9763b0d44fcab67ea1c0fdb3fa0",
     products: [],
     body: {
-       page: 1,
-       limit: 10
-    }
-
+      page: 1,
+      limit: 10,
+    },
   }),
 
   actions: {
@@ -23,15 +21,23 @@ export const useProductsStore = defineStore("productsStore", {
     },
 
     async getProducts() {
-      this.products = await shopwareService.getProducts(this.typeOfSort, this.body, this.categoryOfProduct);
+      this.products = await shopwareService.getProducts(
+        this.typeOfSort,
+        this.body,
+        this.categoryOfProduct
+      );
     },
 
     async searchBy(value: string) {
-      if(value) {
-        this.products = await shopwareService.searchBy(this.typeOfSort, this.body, value)
+      if (value) {
+        this.products = await shopwareService.searchBy(
+          this.typeOfSort,
+          this.body,
+          value
+        );
       } else {
-        this.getProducts()
+        this.getProducts();
       }
-    }
+    },
   },
 });
