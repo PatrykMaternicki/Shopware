@@ -5,14 +5,14 @@
       <Searchbox />
     </div>
     <div class="container-fluid pa-0 bg-light">
-      <div class="pt-4 pb-4 col-10 mx-auto">
-        <div class="d-flex flex-gap flex-wrap">
-          <Card
-            :key="index"
-            class="item"
-            :product="product"
-            v-for="(product, index) in products"
-          />
+      <div class="pt-5 pb-5 col-10 mx-auto">
+        <div class="grid">
+          <div v-for="(product, index) in products">
+            <Card
+              :key="index"
+              :product="product"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -29,11 +29,9 @@ productsStore.getProducts();
 const { products } = storeToRefs(productsStore);
 </script>
 <style lang="scss">
-.flex-gap {
+.grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
   gap: 1rem;
-}
-
-.item {
-  width: 30%;
 }
 </style>
